@@ -27,28 +27,49 @@
         'Info' => 'Willie Hugh Nelson (Abbott, Texas, 29 de abril de 1933) es un cantante, compositor y guitarrista estadounidense de country. El éxito en la crítica de sus álbumes Shotgun Willie (1973), Red Headed Stranger (1975) y Stardust (1978) convirtieron a Nelson en uno de los artistas más reconocidos de la música country. Es una de las principales figuras del outlaw country',
         'album_mainstream' => 'Red Headed Stranger',
         'imagen' => $imagenWillie = "Imagenes/Willie.svg"
-    ]
+    ],
     
 ];
 
     $tarjetas = [
         [
             'imagenT' => $imagenWillieT = "Imagenes/26WILLIE-NELSON-STYLE-01-lvmp-articleLarge.webp",
-            'nombre' => "Willie"
+            'nombre' => "Willie Nelson"
         ],
         [
             'imagenT' => $imagenDollyT = "Imagenes/DollyCard.svg",
             'nombre' => "Dolly Parton"
         ],
         [
-            'imagenT' => $imagenWillieT = "Imagenes/26WILLIE-NELSON-STYLE-01-lvmp-articleLarge.webp",
-            'nombre' => "Willie"
+            'imagenT' => $imageTaylorT = "Imagenes/TaylorCard.svg",
+            'nombre' => "Taylor Swift"
         ],
         [
-            'imagenT' => $imagenWillieT = "Imagenes/26WILLIE-NELSON-STYLE-01-lvmp-articleLarge.webp",
-            'nombre' => "Willie"
-        ]
-    ]
+            'imagenT' => $imagenTimT = "Imagenes/timCard.svg",
+            'nombre' => "Tim Mc Graw"
+        ],
+    ];
+
+$carruseliconos = [
+
+    [
+        'iconoT' => $iconoTaylor = "circleTaylor",
+        'iconoD' => $iconoDolly = "circleDolly",
+        'iconoW' => $iconoWillie = "circleWillie" 
+    ],
+
+    [
+        'iconoT' => $iconoTaylor = "circleTaylor",
+        'iconoD' => $iconoDolly = "circleDolly",
+        'iconoW' => $iconoWillie = "circleWillie" 
+    ],
+
+    [
+        'iconoT' => $iconoTaylor = "circleTaylor",
+        'iconoD' => $iconoDolly = "circleDolly",
+        'iconoW' => $iconoWillie = "circleWillie" 
+    ],
+];
 
 
 ?>

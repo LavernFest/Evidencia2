@@ -71,6 +71,7 @@
 </div>
 <!--Fin Carousel-->
 
+<!--Tarjetas-->
 <div class="row">
     <div class="col-12">
         <div class="rectangle mt-4 mb-4">
@@ -81,18 +82,89 @@
 
 <div class="row">
     <?php
-        echo '<p>hola</p>';
+        for ($r=0; $r < count($tarjetas); $r++) {
+            foreach ($tarjetas[$r] as $llave => $columna) {
+                switch ($llave) {
+                    case 'imagenT':
+                        $imagenTV = $columna;
+                        break;
+                    case 'nombre':
+                        $nombreV = $columna;
+                        break;
+                    default:
+                        echo '<p>Algo Salio mal...</p>';
+                        break;
+                }
+            }
+
+            echo '<div class="col-lg-3 col-md-6 col-sm-12">';
+                echo '<div class="card" style="width: 18rem;">';
+                    echo '<img class="card-img-top" src='.$imagenTV.'>';
+                    echo '<div class="card-body">';
+                        echo '<a class="nav-link" href="Artista.html">'.$nombreV.'</a>';
+                    echo '</div>';
+                echo '</div>';
+            echo '</div>';
+        }
     ?>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Imagenes/26WILLIE-NELSON-STYLE-01-lvmp-articleLarge.webp" alt="Willie">
-                    <div class="card-body">
-                        <a class="nav-link" href="Artista.html">Artista</a>
-                    </div>
-                </div>
-            </div>
+</div>
+<!--Fin Tarjetas-->
+
+
+
+<!--Carrusel de iconos-->
+<div class="row">
+    <div class="col-12">
+        <div class="rectangle mt-4 mb-4">
+            <h3 class="px-4 py-4">Populares</h3>
+        </div>
+    </div>
 </div>
 
+<div class="row">
+    <div class="col-12">
+        <div id="carousel2" class="carousel carouselPopular slide">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center">
+                        <h2 class="py-2">Desliza para ver los Artistas Populares</h2>
+                </div>
+
+                <?php 
+                    for ($r=0; $r < count($carruseliconos); $r++) {
+                        foreach ($carruseliconos[$r] as $llave => $columna) {
+                            switch ($llave) {
+                                case 'iconoT':
+                                    $iconoTV = $columna;
+                                    break;
+                                case 'iconoD':
+                                    $iconoDV = $columna;
+                                    break;
+                                case 'iconoW':
+                                    $iconoWV = $columna;
+                                    break;
+                                default:
+                                    echo '<p>Algo Salio mal</p>';
+                                    break;
+                            }
+                        }
+
+                        echo '<div class="carousel-item text-center">';
+                                echo '<a href="Artista.html" class="'.$iconoTV.'"></a>';
+                                echo '<a href="Artista.html" class="'.$iconoDV.'"></a>';
+                                echo '<a href="Artista.html" class="'.$iconoWV.'"></a>';
+                        echo '</div>';
+                    }
+                ?>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
 </div>
 <?php
