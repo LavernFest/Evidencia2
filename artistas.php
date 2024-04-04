@@ -31,6 +31,25 @@
     
 ];
 
+    $tarjetas = [
+        [
+            'imagenT' => $imagenWillieT = "Imagenes/26WILLIE-NELSON-STYLE-01-lvmp-articleLarge.webp",
+            'nombre' => "Willie"
+        ],
+        [
+            'imagenT' => $imagenDollyT = "Imagenes/DollyCard.svg",
+            'nombre' => "Dolly Parton"
+        ],
+        [
+            'imagenT' => $imagenWillieT = "Imagenes/26WILLIE-NELSON-STYLE-01-lvmp-articleLarge.webp",
+            'nombre' => "Willie"
+        ],
+        [
+            'imagenT' => $imagenWillieT = "Imagenes/26WILLIE-NELSON-STYLE-01-lvmp-articleLarge.webp",
+            'nombre' => "Willie"
+        ]
+    ]
+
 
 ?>
 

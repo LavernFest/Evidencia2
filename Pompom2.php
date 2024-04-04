@@ -6,6 +6,7 @@
     $titulo='PomPom';
 ?>
 <div class="container">
+
 <!--Carusel-->
 <div class="row">
     <div class="col-lg-12 col-md-12">
@@ -73,10 +74,25 @@
 <div class="row">
     <div class="col-12">
         <div class="rectangle mt-4 mb-4">
-                    <h3 class="px-4 py-4">Últimos agregados</h3>
+            <h3 class="px-4 py-4">Últimos agregados</h3>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <?php
+        echo '<p>hola</p>';
+    ?>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="Imagenes/26WILLIE-NELSON-STYLE-01-lvmp-articleLarge.webp" alt="Willie">
+                    <div class="card-body">
+                        <a class="nav-link" href="Artista.html">Artista</a>
+                    </div>
                 </div>
             </div>
-        </div>
+</div>
+
 
 </div>
 <?php
