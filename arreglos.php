@@ -71,6 +71,25 @@ $carruseliconos = [
     ],
 ];
 
+$paginaArtista = [
+    [
+        'imagenFondoPA' => "Imagenes/taylor-fondo.svg",
+        'imagenArtistaPA' => "Imagenes/TaylorCard.svg",
+        'nombrePA' => 'Taylor Swift',
+        'descripcionPA' => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus itaque assumenda culpa magnam consequuntur quisquam quidem, accusantium numquam rem ad dolorem officia sequi rerum perferendis eaque aperiam commodi quas, molestias, similique eos debitis iste? Praesentium!",
+        'albumPA' => "Red",
+        'imagenAlbumPA' => "Imagenes/Taylor_Swift_-_Red.png",
+        'cancion' => $canciones = ["Musica/No Es Que No Te Quiera.mp3", "Musica/No Es Que No Te Quiera.mp3","Musica/No Es Que No Te Quiera.mp3","Musica/No Es Que No Te Quiera.mp3"]
+    ]
+];
 
+$Sobrenosotros = [
+    [
+        'bienvenida' => "¡Bienvenido/a a POM POM ! Somos apasionados de la música y estamos dedicados a brindarte la mejor experiencia posible. Conoce más sobre quiénes somos y qué hacemos:",
+        'mision' => "Nuestra misión conectar a los amantes de la música con sus artistas favoritos, descubrir nueva música y crear una comunidad vibrante.",
+        'vision' => "Nuestra como empresa mundial es hacer llegar la música country a cada rincón del mundo, así como impulsar pequeños artistas a lograr sus objetivos artísticos <br> <br> </p>",
+        'nosotros' => "Somos un equipo de entusiastas de la música, desarrolladores web, diseñadores y creadores de contenido dedicados a traerte lo último y lo mejor en el mundo de la música."
+    ]
+    ];
 ?>
 

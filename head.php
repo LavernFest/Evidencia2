@@ -25,7 +25,7 @@
         <div class="col-12">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="About.html">
+                    <a class="navbar-brand" href="About.php">
                         <img src="<?= $logo ?>" alt="Logo" width="160" height="70" class="d-inline-block align-text-top float-start">
                     </a>
                     
@@ -36,16 +36,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="Pompom.html">Home</a>
+                                <a class="nav-link active" aria-current="page" href="Pompom2.php">Home</a>
                             </li> 
                             <li class="nav-item">
-                                <a class="nav-link" href="Explorar.html">Explorar</a>
+                                <a class="nav-link" href="Explorar.php">Explorar</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Popular.html">Popular</a>
+                                <a class="nav-link" href="Popular.php">Popular</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Contactanos.html">Contáctanos</a>
+                                <a class="nav-link" href="Contactanos.php">Contáctanos</a>
                             </li>
                         </ul>
                     </div>

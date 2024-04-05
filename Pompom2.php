@@ -1,6 +1,6 @@
 <?php
     include('head.php');
-    include('artistas.php');
+    include('arreglos.php');
 ?>
 <?php
     $titulo='PomPom';
@@ -48,7 +48,7 @@
                                 echo '<h2>'.$artistaV.'</h2>';
                                 echo '<p>'.$infoV.'</p>';
                                 echo '<h3>'.$albumV.'</h3>';
-                                echo '<a class="btn" href="#" role="button">Más del Artista</a>';
+                                echo '<a class="btn" href="artista.php" role="button">Más del Artista</a>';
                             echo '</div>';
                             echo '<img src='.$imagenV.' class="d-block w-100">';
                         echo '</div>';
@@ -101,7 +101,7 @@
                 echo '<div class="card" style="width: 18rem;">';
                     echo '<img class="card-img-top" src='.$imagenTV.'>';
                     echo '<div class="card-body">';
-                        echo '<a class="nav-link" href="Artista.html">'.$nombreV.'</a>';
+                        echo '<a class="nav-link" href="artista.php">'.$nombreV.'</a>';
                     echo '</div>';
                 echo '</div>';
             echo '</div>';
@@ -150,9 +150,9 @@
                         }
 
                         echo '<div class="carousel-item text-center">';
-                                echo '<a href="Artista.html" class="'.$iconoTV.'"></a>';
-                                echo '<a href="Artista.html" class="'.$iconoDV.'"></a>';
-                                echo '<a href="Artista.html" class="'.$iconoWV.'"></a>';
+                                echo '<a href="artista.php" class="'.$iconoTV.'"></a>';
+                                echo '<a href="artista.php" class="'.$iconoDV.'"></a>';
+                                echo '<a href="artista.php" class="'.$iconoWV.'"></a>';
                         echo '</div>';
                     }
                 ?>
