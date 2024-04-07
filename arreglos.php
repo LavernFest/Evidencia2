@@ -91,5 +91,29 @@ $Sobrenosotros = [
         'nosotros' => "Somos un equipo de entusiastas de la música, desarrolladores web, diseñadores y creadores de contenido dedicados a traerte lo último y lo mejor en el mundo de la música."
     ]
     ];
+
+    $Contactanos = [
+        [
+            'Comentarios' => "¿Tienes algún comentario?, dejánoslo saber
+            ¡Gracias por visitar nuestro sitio web de música! Valoramos tus comentarios y consultas. No dudes en ponerte en contacto con nosotros utilizando los siguientes métodos:
+            Conéctate con nosotros en las redes sociales para obtener las últimas actualizaciones, noticias y contenido exclusivo:",
+            'inforedes' => " https://EJEMPLO_DE_LINK_DE_INSTAGRAM.com/pompom
+                https://EJEMPLO_DE_LINK_DE_FACEBOOK.com/pompom
+               ✆ ☏ 7226922503",
+            'Problemas' => "¿Tienes algún problema?, comentalo y haznos saber cómo ayudarte
+            Para obtener ayuda con pedidos, problemas de cuenta o cualquier otra consulta relacionada con el soporte, comunícate con nuestro equipo de soporte al cliente: <br> <br> </p>",
+            'servicios' => "📱 https://EJEMPLO_DE_LINK_DE_PÁGINA DE SERVICIOS.com/pompom
+            ✆ ☏ 7226922503"
+        ]
+        ];
+
+$Romance = [
+    [
+        'Canción1' => "Canción1",
+        'Canción1' => "Canción1",
+        'Canción1' => "Canción1",
+        'Canción1' => "Canción1",
+    ]
+    ];
 ?>
 
