@@ -47,6 +47,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="Contactanos.php">Contáctanos</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="formulario.php">Formulario</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
