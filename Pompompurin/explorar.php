@@ -2,7 +2,7 @@
 require('private/init.php');
 include(SHARED_PATH . 'header.php'); 
 //include('arreglos.php')
-$artistas = todo_de_tablaLIMIT('artistas');
+$artistas = todo_de_tabla('artistas');
 $generos = todo_de_tabla('generos');
 
 $limite = 5;

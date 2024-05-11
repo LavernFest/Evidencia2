@@ -16,7 +16,7 @@ $artistasCarusel = todo_de_tabla('artistas');
                 <?php 
                 while ($row = $artistasCarusel -> fetch_assoc()){
                     echo '<div class="carousel-item text-center">';
-                        echo '<a href="/POMPOM-BD/Pompompurin/artista.php" class="icono" style=\'background-image:url("'.$row["Imagen_Carusel"].'")\'></a>';
+                    echo '<a href="/POMPOM-BD/Pompompurin/artista.php?ID='.$row['ID'].'" class="icono" style=\'background-image:url("'.$row["Imagen_Carusel"].'")\'></a>';
                     echo '</div>';
                 }
                 ?>
