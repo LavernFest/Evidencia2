@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-05-2024 a las 22:30:29
+-- Tiempo de generación: 11-05-2024 a las 23:08:34
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -48,7 +48,7 @@ INSERT INTO `artistas` (`ID`, `Nombre`, `Info`, `Album`, `Imagen_Fondo`, `Imagen
 (3, 'Dolly Parton', 'Dolly Rebecca Parton (Sevierville, Tennessee; 19 de enero de 1946) es una cantante, compositora, actriz, productora, escritora, filántropa y empresaria estadounidense. Está considerada como una de las mejores cantantes de la música country, así como una de las principales figuras artísticas de este género. Durante más de cinco décadas, ha sido reconocida su faceta innovadora, en particular por sus trabajos de las años 1970 y 1980, y por su peculiar voz; se hace referencia a ella frecuentemente como ', 'Rockstar', 'Imagenes/dolly-parton.svg', 'Imagenes/DollyCard.svg', 'Imagenes/DollyPfP.svg', 1),
 (4, 'Willie Nelson', 'Willie Hugh Nelson (Abbott, Texas, 29 de abril de 1933) es un cantante, compositor y guitarrista estadounidense de country. El éxito en la crítica de sus álbumes Shotgun Willie (1973), Red Headed Stranger (1975) y Stardust (1978) convirtieron a Nelson en uno de los artistas más reconocidos de la música country. Es una de las principales figuras del outlaw country', 'Red Headed Stranger', 'Imagenes/Willie.svg', 'Imagenes/26WILLIE-NELSON-STYLE-01-lvmp-articleLarge.webp', 'Imagenes/williePFP.svg', 4),
 (13, 'Hatsune Miku', 'Miku Hatsune (CV01/初音ミク Hatsune Miku?) conocida mayormente como Hatsune Miku o simplemente Miku, es una cantante virtual para el sintonizador desarrollado por Yamaha, VOCALOID2, VOCALOID3 y VOCALOID4, así como para el programa desarrollado por Crypton Future Media, Piapro Studio. Su imagen, de una chica de antropomorfismo moe de 16 años, llega a ser considerada y personificada como una de las más famosas idol virtuales japonesas a nivel mundial, desarrollada por Crypton Future Media con la voz de la seiyuu Saki Fujita para la segunda versión del programa de sintetización de voz VOCALOID.', 'Sekai', 'https://i.pinimg.com/originals/51/53/19/5153192eeaf43bbe1996c0610d093302.jpg', 'https://i.pinimg.com/564x/8c/67/0e/8c670e09ad1a7c4c4b58e6ced8022258.jpg', 'https://upload.wikimedia.org/wikipedia/en/6/68/Miku_Flick_AppStore-Icon.png', 3),
-(24, 'Sofia Carson', 'Sofia Lauren Daccarett Char​​ ​​ conocida artísticamente como Sofia Carson, es una actriz, bailarina, cantante y compositora estadounidense de ascendencia colombiana. Su primera aparición en televisión fue como actriz invitada en la serie de Disney Channel Austin & Ally.', 'Purple Hearts', 'https://peopleenespanol.com/thmb/38SG-lJYKyuwF3AnXQZwNU4C3LU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sofia-image-1-2000-788995b42e31428f82180a0f2cd2c763.jpg', 'https://m.media-amazon.com/images/M/MV5BMGM1NjE5NjItMjE1My00MzAwLThhYjctNzc3NzIwMmI4OGIxXkEyXkFqcGdeQXVyMzk3NzMxNTI@._V1_FMjpg_UX1000_.jpg', 'https://cdns-images.dzcdn.net/images/cover/424449ff95f335dabcd7f33f3790d825/200x200.jpg', 5);
+(24, 'Sofia Carson', 'Sofia Lauren Daccarett Char​​ ​​ conocida artísticamente como Sofia Carson, es una actriz, bailarina, cantante y compositora estadounidense de ascendencia colombiana. Su primera aparición en televisión fue como actriz invitada en la serie de Disney Channel Austin & Ally.', 'Purple Hearts', 'https://peopleenespanol.com/thmb/38SG-lJYKyuwF3AnXQZwNU4C3LU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sofia-image-1-2000-788995b42e31428f82180a0f2cd2c763.jpg', 'https://m.media-amazon.com/images/M/MV5BMGM1NjE5NjItMjE1My00MzAwLThhYjctNzc3NzIwMmI4OGIxXkEyXkFqcGdeQXVyMzk3NzMxNTI@._V1_FMjpg_UX1000_.jpg', 'https://cdns-images.dzcdn.net/images/cover/424449ff95f335dabcd7f33f3790d825/200x200.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -134,7 +134,8 @@ INSERT INTO `generos` (`ID`, `Nombre`) VALUES
 (2, 'Folk'),
 (3, 'Instrumental'),
 (4, 'Rock Country'),
-(5, 'Pop');
+(5, 'Pop'),
+(7, 'TrashMusik2');
 
 -- --------------------------------------------------------
 
@@ -221,7 +222,7 @@ ALTER TABLE `contactanos`
 -- AUTO_INCREMENT de la tabla `generos`
 --
 ALTER TABLE `generos`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `nosotros`
