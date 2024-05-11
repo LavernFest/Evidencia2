@@ -30,7 +30,7 @@ $artistasCarusel = todo_de_tablaLIMIT('artistas');
                                 echo '<h2>'.$row['Nombre'].'</h2>';
                                 echo '<p>'.$row['Info'].'</p>';
                                 echo '<h3>'.$row['Album'].'</h3>';
-                                echo '<a class="btn" href="artista.php" role="button">Más del Artista</a>';
+                                echo '<a class="btn" href="artista.php?ID='.$row['ID'].'" role="button">Más del Artista</a>';
                             echo '</div>';
                             echo '<img src='.$row['Imagen_Fondo'].' class="d-block w-100">';
                         echo '</div>';
@@ -67,7 +67,7 @@ $artistasCarusel = todo_de_tablaLIMIT('artistas');
                 echo '<div class="card" style="width: 18rem;">';
                     echo '<img class="card-img-top" src='.$row['Imagen_Tarjetas'].'>';
                     echo '<div class="card-body">';
-                        echo '<a class="nav-link" href="artista.php">'.$row['Nombre'].'</a>';
+                        echo '<a class="nav-link" href="artista.php?ID='.$row['ID'].'">'.$row['Nombre'].'</a>';
                     echo '</div>';
                 echo '</div>';
             echo '</div>';
@@ -99,7 +99,7 @@ $artistasCarusel = todo_de_tablaLIMIT('artistas');
                 <?php 
                 while ($row = $artistasCarusel -> fetch_assoc()){
                     echo '<div class="carousel-item text-center">';
-                        echo '<a href="/POMPOM-BD/Pompompurin/artista.php" class="icono" style=\'background-image:url("'.$row["Imagen_Carusel"].'")\'></a>';
+                        echo '<a href="/POMPOM-BD/Pompompurin/artista.php?ID='.$row['ID'].'" class="icono" style=\'background-image:url("'.$row["Imagen_Carusel"].'")\'></a>';
                     echo '</div>';
                 }
                  /*    for ($r=0; $r < count($carruseliconos); $r++) {
