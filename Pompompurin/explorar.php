@@ -32,7 +32,7 @@ $limite = 5;
                                 echo '<h2>'.$row['Nombre'].'</h2>';
                                 echo '<p>'.$row['Info'].'</p>';
                                 echo '<h3>'.$row['Album'].'</h3>';
-                                echo '<a class="btn" href="artista.php" role="button">Más del Artista</a>';
+                                echo '<a class="btn" href="artista.php?ID='.$row['ID'].'" role="button">Más del Artista</a>';
                             echo '</div>';
                             echo '<img src='.$row['Imagen_Fondo'].' class="d-block w-100">';
                         echo '</div>';
