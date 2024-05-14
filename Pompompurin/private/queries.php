@@ -99,3 +99,27 @@ function eliminar_cancion($id){
     return mysqli_query($db, $sql);
 }
 
+//About ...
+function nuevo_elemento($Campo,$Valor){
+    global $db;
+    $sql = "INSERT INTO nosotros (Campo,Valor) VALUES ('$Campo','$Valor')";
+    return mysqli_query($db, $sql);
+}
+
+function actualizar_elemento($id,$Campo,$Valor){
+    global $db;
+    $sql = "UPDATE nosotros SET Campo='$Campo', Valor='$Valor' WHERE ID=$id";
+    return mysqli_query($db, $sql);
+}
+
+function eliminar_elemento($id){
+    global $db;
+    $sql = "DELETE FROM nosotros WHERE ID=$id";
+    return mysqli_query($db, $sql);
+}
+
+function elemento_por_id($id){
+    global $db;
+    $sql = "SELECT * FROM nosotros WHERE ID=$id";
+    return mysqli_query($db, $sql);
+}

@@ -45,7 +45,7 @@ $canciones = canciones_por_Artista($id);
                     echo '<div class="Songs">';
                         echo '<h3>Canciones</h3>';
                         while ($row = $canciones -> fetch_assoc()) {
-                            echo '<audio src="'.$row["source"].'" controls>
+                            echo '<audio src="/Musica/'.$row["source"].'" controls>
                             <p>If you are reading this, it is because your browser does not support the audio element.</p>
                         </audio>';
                         }

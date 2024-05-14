@@ -6,6 +6,7 @@ include('arreglos.php');
 $artistas = todo_de_tabla('artistas');
 $generos = todo_de_tabla('generos');
 $canciones = todo_de_tabla('canciones');
+$nosotros = todo_de_tabla('nosotros');
 ?>
 <!--Formulario-->
 
@@ -22,6 +23,9 @@ $canciones = todo_de_tabla('canciones');
         </div>
         <div class="col-2">
             <a href="#Canciones" class="btn btn-success">Ir a Canciones</a>
+        </div>
+        <div class="col-2">
+            <a href="#Nosotros" class="btn btn-success">Ir a Nosotros</a>
         </div>
     </div>
     <!-- Artistas -->
@@ -166,6 +170,56 @@ $canciones = todo_de_tabla('canciones');
             </div>
     </div>
     <!-- FIN Canciones -->
+
+<!-- About -->
+<div id="Nosotros">
+    
+    <div class="row">
+        <div class="col-12">
+            <div class="rectangle mt-4 mb-4">
+                <h3 class="px-4 py-4">Sobre nosotros</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col text-end">
+            <a href="about/create.php" class="btn btn-success">Agregar elemento</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Campo</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <?php while( $row = $nosotros ->fetch_assoc() ){ ?>
+                        <tr>
+                            <td><?= $row['ID'] ?></td>
+                            <td><?= $row['Campo'] ?></td>
+                            <td><?= $row['Valor'] ?></td>
+                            <td>
+                                <a href="about/show.php?ID=<?= $row['ID'] ?>" class="btn btn-secondary">Ver</a>
+                            </td>
+                        </tr>
+                    <?php } ?>
+
+                </tbody>
+            </table>
+
+        </div>
+</div>
+<!-- FIN About -->
+
     </div>
 </div>
 
